@@ -1,9 +1,15 @@
 import os
+
+# Load some secrets
 from os.path import join, dirname
 from dotenv import load_dotenv
 
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
+
+# ---------------------------------------------
+# ref: https://github.com/slackapi/python-slackclient
+#
 
 from slackclient import SlackClient
 
