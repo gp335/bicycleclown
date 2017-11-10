@@ -18,7 +18,6 @@ sc = SlackClient(slack_token)
 
 sc.api_call(
   "chat.postMessage",
-  channel="#python",
-  text="Hello from Python! :tada:",
-  thread_ts="1476746830.000003"
+  channel="#general",
+  text="hi ",
 )
